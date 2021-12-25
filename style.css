@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    width: 80vmin;
+    border: 1px solid grey;
+    border-radius: 0.5vmin;
+    color: black;
+    font-size: 2rem;
+    transition: background-color 0.3s ease-in;
+    cursor: pointer;
+}
+
+.active {
+    border: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.active,
+.btn:hover {
+    background-color: teal;
+    color: white;
+    transition: background-color 0.3s ease-out;
+    transition: color 0.3s ease-out;
+}
+
+.plus {
+    content: "";
+    background-image: url("icons/plus-lg.svg");
+    background-size: cover;
+    height: 28px;
+    width: 28px;
+}
+
+.--minus {
+    content: "";
+    background-image: url("icons/dash-lg.svg");
+    background-size: cover;
+    height: 28px;
+    width: 28px;
+}
+
+.container {
+    max-height: 0;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+.content__box {
+    width: 80vmin;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+}
