@@ -1,4 +1,3 @@
-const active = document.querySelector(".active");
 const button = document.querySelectorAll(".btn");
 
 for (let i = 0; i < button.length; i++) {
